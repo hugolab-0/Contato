@@ -1,9 +1,9 @@
 'use strict'
 
-import { getContatos, postContato, putContato } from "./contatos.js"
+import { getContatos, postContato, putContato, deleteContato } from "./contatos.js"
 
 const novoContato = {
-    "nome": "Hugo atualizado",
+    "nome": "fique esperto brayan...nikito te observa.",
     "celular": "11 9 7171-6464",
     "foto": "https://img.freepik.com/psd-gratuitas/renderizacao-3d-do-estilo-de-cabelo-para-o-design-do-avatar_23-2151869121.jpg",
     "email": "ana@gmail.com",
@@ -11,4 +11,4 @@ const novoContato = {
     "cidade": "Sorocaba"
 }
 
-console.log(await putContato(56, novoContato))
+console.log(await deleteContato(56 ))

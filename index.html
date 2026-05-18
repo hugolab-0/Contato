@@ -2,13 +2,88 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./app.js" defer type="module"></script>
     <title>Contatos</title>
 </head>
-<body>
- 
 
-    
+<body class="bg-gray-100 p-10 font-mono">
+
+   
+    <h1 class="text-5xl mb-8">
+        Gerenciamento de Contatos
+    </h1>
+
+
+    <div class="bg-white p-6 rounded-lg shadow-xl mb-6">
+
+        <h2 class="text-xl mb-4">
+            Adicionar Novo Contato
+        </h2>
+
+        <div class="grid grid-cols-2 gap-4">
+
+            <input id="nome"
+                class="border border-red-600 p-2 rounded w-full"
+                placeholder="Nome *">
+
+            <input id="celular"
+                class="border p-2 rounded w-full"
+                placeholder="Celular *">
+
+            <input id="foto"
+                class="border p-2 rounded w-full"
+                placeholder="URL da Foto *">
+
+            <input id="email"
+                class="border p-2 rounded w-full"
+                placeholder="Email *">
+
+            <input id="endereco"
+                class="border p-2 rounded w-full"
+                placeholder="Endereço *">
+
+            <input id="cidade"
+                class="border p-2 rounded w-full"
+                placeholder="Cidade *">
+
+        </div>
+
+        <button id="salvar"
+            class="mt-4 bg-red-600 text-white px-5 py-2 rounded ">
+            ADICIONAR
+        </button>
+
+    </div>
+
+   
+    <div class="bg-white p-6 rounded-lg shadow-xl">
+
+        <table class="w-full text-center border-collapse">
+
+            <thead>
+                <tr class="border-b">
+                    <th class="p-2">Foto</th>
+                    <th class="p-2">Nome</th>
+                    <th class="p-2">Celular</th>
+                    <th class="p-2">Email</th>
+                    <th class="p-2">Endereço</th>
+                    <th class="p-2">Cidade</th>
+                    <th class="p-2">Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="lista">
+                <tr>
+                    <td colspan="7" class="p-4 text-gray-500">
+                        Nenhum contato cadastrado
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
 </body>
 </html>

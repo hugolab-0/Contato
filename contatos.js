@@ -28,9 +28,20 @@ export async function putContato(id, contato) {
         },
         body: JSON.stringify(contato)
     }
-    const response = fetch(`${URL}/${id}`, options)
+    const response = await fetch(`${URL}/${id}`, options)
 
     if(!response.ok) throw new Error('Erro ao atualizar contato')
         return response.json()
+}
+
+export async function deleteContato(id) {
+    const options = {
+        method: 'DELETE'
+    }
+
+    const response = await fetch(`${URL}/${id}`, options)
+
+    if(!response.ok) throw new Error('Erro ao deletar contrato')
+        return true
 }
 
