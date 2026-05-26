@@ -44,4 +44,3 @@ export async function deleteContato(id) {
     if(!response.ok) throw new Error('Erro ao deletar contrato')
         return true
 }
-
