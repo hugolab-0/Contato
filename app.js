@@ -11,4 +11,4 @@ const novoContato = {
     "cidade": "Sorocaba"
 }
 
-console.log(await deleteContato(56 ))
+// console.log(await deleteContato(56 ))
